@@ -6,10 +6,10 @@ import sys
 
 sys.path.append("/home/brinae/inky/inky")
 
-from inky.auto import auto
+from inky import Inky7Colour as Inky
 
 # Initialize Inky display
-inky_display = auto()
+inky_display = Inky()
 inky_display.set_border(inky_display.WHITE)  # Adjust as needed
 
 # Folder where images are stored
