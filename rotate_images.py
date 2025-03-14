@@ -2,6 +2,9 @@ import os
 import time
 from PIL import Image
 from inky.auto import auto
+import sys
+
+sys.path.append("/home/brinae/inky/inky")
 
 # Initialize Inky display
 inky_display = auto()
