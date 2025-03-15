@@ -1,5 +1,6 @@
 import os
 import time
+import random
 from PIL import Image
 
 import sys
@@ -15,9 +16,11 @@ inky_display.set_border(inky_display.WHITE)  # Adjust as needed
 # Folder where images are stored
 image_folder = "images"
 
-# Get all images in the folder
+# Get all images in the folder and shuffle them
 def get_images():
-    return sorted([f for f in os.listdir(image_folder) if f.endswith((".png", ".jpg", ".bmp"))])
+    images = [f for f in os.listdir(image_folder) if f.endswith((".png", ".jpg", ".bmp"))]
+    random.shuffle(images)  # Shuffle the image list
+    return images
 
 # Function to display an image
 def display_image(image_path):
@@ -35,5 +38,4 @@ while True:
         for img in images:
             print(f"Displaying: {img}")
             display_image(os.path.join(image_folder, img))
-            time.sleep(30)  # Change image every 30 seconds
-
+            time.sleep(1800)  # Change image every 30 minutes
