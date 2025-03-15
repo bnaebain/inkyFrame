@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "/home/brinae/inkyFrame/rotate_images.py", line 10, in <module>
+    from inky import Inky7Colour as Inky
+  File "/home/brinae/inky/inky/inky.py", line 13, in <module>
+    from . import eeprom
+ImportError: attempted relative import with no known parent package

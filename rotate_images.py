@@ -14,7 +14,8 @@ inky_display = Inky()
 inky_display.set_border(inky_display.WHITE)  # Adjust as needed
 
 # Folder where images are stored
-image_folder = "images"
+image_folder = os.path.join(os.path.dirname(__file__), "images")
+
 
 # Get all images in the folder and shuffle them
 def get_images():
