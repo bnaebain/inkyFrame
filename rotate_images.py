@@ -38,4 +38,4 @@ while True:
         for img in images:
             print(f"Displaying: {img}")
             display_image(os.path.join(image_folder, img))
-            time.sleep(1800)  # Change image every 30 minutes
+            time.sleep(30)  # Change image every 30 minutes
